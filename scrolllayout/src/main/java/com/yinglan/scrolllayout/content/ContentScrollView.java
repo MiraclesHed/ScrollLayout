@@ -73,11 +73,11 @@ public class ContentScrollView extends ScrollView {
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
-        ViewParent parent = this.getParent();
-        if (parent instanceof ScrollLayout) {
-            if (((ScrollLayout) parent).getCurrentStatus() == ScrollLayout.Status.OPENED)
-                return false;
-        }
+//         ViewParent parent = this.getParent();
+//         if (parent instanceof ScrollLayout) {
+//             if (((ScrollLayout) parent).getCurrentStatus() == ScrollLayout.Status.OPENED)
+//                 return false;
+//         }
         return super.onTouchEvent(ev);
     }
 }
